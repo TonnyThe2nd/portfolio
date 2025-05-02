@@ -13,8 +13,11 @@
     <div class="circle circle3"></div>
     <div class="nav">
         <img src="images/images.png" alt="icone" class="icone">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Ícone do menu hambúrguer -->
+        </div>
         <nav>  
-            <ul>  
+            <ul class="nav-list">  
                 <li class="elementoLista">Sobre Mim</li>
                 <li class="elementoLista">Carreira</li>
                 <li class="elementoLista">Objetivos</li>
@@ -29,7 +32,7 @@
             <h1 class="intro" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; font-weight: normal;">Meu nome é Antonio!</h3>
             <h2 class="intro" style="font-weight: normal;color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Desenvolvedor full stack</h2>
             <a href="https://www.instagram.com/web_4ntonio/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="www.linkedin.com/in/antonio-marcos-oliveira"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/antonio-marcos-oliveira"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/TonnyThe2nd"><i class="fa-brands fa-github"></i></a>
         </div>
         <img src="images/Screenshot 2025-05-02 150636.png" alt="foto" class="personal_pic">
@@ -61,5 +64,12 @@
             </div>
         </div> 
     </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.nav-list');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
