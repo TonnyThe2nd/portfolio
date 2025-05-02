@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav{
+    display: flex;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    display: flex;
+}
+.icone{
+    height: 10vh;
+    width: 10vh;
+    margin-left: 9vh;
+    margin-top: 1vh;
+}
+.elementoLista{
+    width: 15vh;
+    background-color: rgb(75, 144, 234);
+    margin: 4vh 5vh;
+    padding: 10px;
+    border-radius: 5px;
+}
+.main{
+    position: relative;
+    display: flex;
+    margin-left: 10vh;
+    margin-top: 15vh;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .intro{
+    margin: 20px 0px;
+}
+
+.main img{
+    position: absolute;
+    right: 0;
+    bottom:10;
+    height: 65vh;
+    width: 65vh;
+    border-radius: 50%;
+    border: 10px solid rgb(75, 144, 234);
+}
+
+.main i{
+    margin-top: 1vh;
+    font-size: 4vh;
+    padding-left: 3vh;
+}
+
+i:hover{
+    color: rgb(77, 77, 77);
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(75, 144, 234);
+    top: 28vh;
+    left: -22vh;
+}
+
+.circle2 {
+    width: 320px;
+    height: 329px;
+    background-color: rgb(75, 144, 234);
+    top:15vh;
+    right: -9vh;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(75, 144, 234);
+    bottom: 10vh;
+    left: 60%;
+}
+section{
+    position: relative;
+    height: 100vh;
+    margin-left: 10vh;
+}
+
+section img{
+    border-radius: 50%;
+    border: 10px solid rgb(75, 144, 234);
+    width: 50vh;
+    height: 55vh;
+}
+
+.content{
+    display: flex;
+    margin-top: 10vh;
+}
+
+.content .textos{
+    margin-left: 15vh;
+}
+
+.circle4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(75, 144, 234);
+    top: 15vh;
+    left: -10vh;
+}
+
+.circle5 {
+    width: 320px;
+    height: 329px;
+    background-color: rgb(75, 144, 234);
+    top:11vh;
+    right: -27vh;
+}
+
+.circle6 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(75, 144, 234);
+    bottom: 20vh;
+    left: 15%;
+}
+.circle7 {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(75, 144, 234);
+    bottom: 20vh;
+    left: 50%;
+}
+.circle8 {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(75, 144, 234);
+    bottom: 8vh;
+    right: 15%;
+}
+.content .textos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
