@@ -1,58 +1,63 @@
 body {
-    background: linear-gradient(to right, #243b55, #5b247a);
-    color: white;
-  }
+  background: linear-gradient(to right, #243b55, #5b247a);
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: blueviolet;
+}
 
-  .navbar-brand {
-    font-weight: bold;
-    color: blueviolet;
-  }
+.nav-link {
+  color: white !important;
+  border: 2px solid blueviolet;
+  margin: 0 5px;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
 
-  .nav-link {
-    color: white !important;
-    border: 2px solid blueviolet;
-    margin: 0 5px;
-    border-radius: 8px;
-    padding: 6px 12px;
-  }
+.nav-link:hover {
+  background-color: blueviolet;
+  color: white !important;
+}
 
-  .nav-link:hover {
-    background-color: blueviolet;
-    color: white !important;
-  }
+.box-intro {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
 
+.personal-pic {
+  width: 180px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.btn-custom {
+  color: white;
+  border: 2px solid blueviolet;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+@media (min-width: 760px) {
   .box-intro {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid white;
-    border-radius: 25px;
-    padding: 20px;
+    display: flex;
     gap: 20px;
-    align-items: center;
-    margin-top: 30px;
   }
-
-  .personal-pic {
-    width: 180px;
-    height: auto;
-    border-radius: 15px;
-  }
-
-  .btn-custom {
-    color: white;
-    border: 2px solid blueviolet;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-  }
-
-  .btn-custom:hover {
-    background-color: blueviolet;
-    color: white;
-  }
-
-  @media (min-width: 760px){
-    .box-intro{
-      display: flex;
-      gap: 20px;
-    }
-  }
+}
