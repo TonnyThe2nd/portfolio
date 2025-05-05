@@ -1,12 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  background: transparent;
+  background: linear-gradient(to right, #243b55, #5b247a);
   color: white;
   margin: 0;
   overflow-x: hidden;
 }
-html {
-  background: linear-gradient(to right, #243b55, #5b247a);
-}
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -40,8 +41,8 @@ html, body {
 }
 
 .personal-pic {
-  max-width: 100%;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
   height: auto;
   border-radius: 15px;
   display: block;
