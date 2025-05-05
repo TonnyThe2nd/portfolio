@@ -13,6 +13,7 @@ html, body {
 }
 
 .navbar {
+  
   position: fixed;
   z-index: 1050; 
   background: linear-gradient(to right, #243b55, #5b247a); 
@@ -76,12 +77,26 @@ html, body {
   margin: 10px 0px;
 }
 
-section{
-  height: 100vh;
-}
 @media (min-width: 760px) {
   .box-intro {
     display: flex;
     gap: 20px;
   }
+}
+
+.section-habilidades {
+  margin-top: 100px;
+  min-height: 100vh;
+  padding-top: 60px; 
+  color: white;
+}
+
+.habilidades-box{
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
 }
