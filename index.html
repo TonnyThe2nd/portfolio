@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meu Portfólio!</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
-<body >
-  <nav class="navbar navbar-expand-lg fixed-top bg-blueviolet shadow-sm">
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="#">./Dev</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,18 +34,21 @@
     <div class="row align-items-center">
       <div class="col-md-6">
         <h4>Olá mundo!</h4>
-        <h1 class="display-4">Meu nome é Antonio!</h1>
+        <h1 class="display-5">Meu nome é Antonio!</h1>
         <h3 class="fw-bold">Desenvolvedor <br> Full stack</h3>
-        <a class="btn-custom mt-3 d-inline-block" href="https://github.com/TonnyThe2nd?tab=repositories">Meus Projetos!</a>
+        <a class="btn-custom mt-3 d-inline-block" href="https://github.com/TonnyThe2nd?tab=repositories">Meus
+          Projetos!</a>
       </div>
       <div class="col-md-6">
         <div class="box-intro">
           <div>
             <p class="fw-bold fs-5">Quem sou eu?</p>
             <h3 style="color: blueviolet;">Antonio Marcos</h3>
-            <p>Sou desenvolvedor full stack em formação. Crio vários projetos a fim de me tornar cada vez mais capacitado.
+            <p>Sou desenvolvedor full stack em formação. Crio vários projetos a fim de me tornar cada vez mais
+              capacitado.
               Gosto de criar IA's e interfaces interativas que envolvem conexões com bancos de dados, com o intuito
-              de fazer algo útil para um possível cliente. Estou sempre empenhado em aprender novas tecnologias e aprimorar 
+              de fazer algo útil para um possível cliente. Estou sempre empenhado em aprender novas tecnologias e
+              aprimorar
               minhas habilidades de desenvolvimento...
             </p>
           </div>
@@ -50,9 +58,114 @@
     </div>
   </div>
 
-  <section>
-    <h1>Teste</h1>
+  <section id="habilidades" class="section-habilidades">
+    <div class="container py-5">
+      <h1>Minhas Habilidades</h1>
+      <div class="row align-items-center py-5">
+        <div class="col-md-6">
+          <div class="habilidades-box">
+            <h2 class="fw-bold fs-3">Descrição</h2>
+            <div id="texto-java" style="display: none;">
+              <h2 class="fw-bold fs-5">Java</h2>
+              <p>Possuo habilidades com criação de interfaces gráficas usando Java Swint e AWT, além de conhecer as
+                sintaxes da linguagem, conhecendo, também, as regras de uma programação orientada ao objeto. Além disso,
+                sou capaz de criar aplicações web usando spring framework, REST APIs, aplicações com Hibernate e afins,
+                tudo junto de uma conexão com bancos de dados;
+              </p>
+            </div>
+            <div id="texto-csharp" style="display: none;">
+              <h2 class="fw-bold fs-5">C#</h2>
+              <p>Sou capaz de criar aplicações web usando Entity Framework junto de html mesclado com razor, além de
+                criar
+                APIs que manipulam dados direto no banco de dados, sendo capaz de usar estruturas tanto MVC quanto
+                Dapper para
+                utilizar os scripts básicos do SQL. Além disso, possuo a habilidade de criar interfaces WPF para
+                aplicações desktop,
+                as quais também se conectam com bancos de dados e manipulam o mesmo. Em geral, compreendo as sintaxes e
+                o uso de programação
+                orientada ao objeto e as sintaxes de C#;
+              </p>
+            </div>
+            <div id="texto-javascript" style="display: none;">
+              <h2 class="fw-bold fs-5">Javascript</h2>
+              <p>Tenho conhecimento nas sintaxes do Javascript, conseguindo trabalhar com os tipos de variaveis, operadores e as diversas
+                funcionalidades que a linguagem oferece. Consigo, além de tudo, manipular o DOM das páginas, manipulando dinamicamente os elementos e atributos.
+                Ademais, consigo realizar programação assincrona com Javascript, utilizando async/await, fetch, try/catch, e afins;
+              </p>
+            </div>
+            <div id="texto-python" style="display: none;">
+              <h2 class="fw-bold fs-5">Python</h2>
+              <p>Sou capaz de utilizar as sintaxes e identações de Python, manipulando facilmente os tipos de dados, funções e módulos/pacotes que
+                a linguagem oferece. Consigo também utilizar programação orientada a objetos, construir desenvolvimento web com bibliotecas como flask e django,
+                conseguindo também conectar com banco de dados SQL. Sou capaz de criar REST APIs com a linguagem e, além de tudo, construir automações e Inteligências
+                artificiais/Machine Learning junto de ciência de dados, usando bibliotecas como NumPy, Matplotlib, sklearn e TensorFlow;
+              </p>
+            </div>
+            <div id="texto-html" style="display: none;">
+              <h2 class="fw-bold fs-5">HTML</h2>
+              <p>Compreendo a estrutura de um documento HTML, tais como suas tags essenciais de texto, botões, formulários e afins.
+                Junto disso, entendo as tags semânticas modernas, desde header até aside.;
+              </p>
+            </div>
+            <div id="texto-css" style="display: none;">
+              <h2 class="fw-bold fs-5">CSS</h2>
+              <p>Sou capaz de utilizar a sintaxe e a estrutura do CSS, mesclando os seletores com classes e id's definidos no HTML.
+                Consigo construir páginas bem estruturadas usando propriedades de layout e posicionamento, assim como propriedades de dimensão, alinhamentos
+                e estrutura de colunas e linhas. Possuo conhecimento também na parte de animações/transições, utilizando transitio/transform/animation e keyframes, e também
+                em responsividade, usando a tag @media;
+              </p>
+            </div>
+            <div id="texto-sql" style="display: none;">
+              <h2 class="fw-bold fs-5">SQL</h2>
+              <p>Sou capaz de construir comandos básicos de um CRUD, involvendo criação, inserção, atualização e remoção de dados em uma tabela.
+                Pensando em consulta, sou capaz de criar filtros e condições em querys, assim como utilizar Joins em outras tabelas para mesclar infor
+                mações. Além disso, consigo criar subqueries e views a fim de fazer subconsultas ou salvar situações virutais. Também consigo criar
+                procedures e triggers no intuito de criar uma estrutura melhor para a base de dados;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold fs-4">Linguagem</h2>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            width="30" height="30" style="cursor: pointer;", onclick="mostrarTexto(0)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="30"
+            height="30" style="cursor: pointer;", onclick="mostrarTexto(1)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            width="30" height="30" style="cursor: pointer;", onclick="mostrarTexto(2)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTexto(3)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+            width="30" height="30", style="cursor: pointer;", onclick="mostrarTexto(4)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTexto(5)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTexto(6)">
+            <h2 class="fw-bold fs-4 mt-5">Framework</h2>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
+            width="30" height="30" style="cursor: pointer;", onclick="mostrarTextoFramework(0)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="30"
+            height="30" style="cursor: pointer;", onclick="mostrarTextoFramework(1)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg"
+            width="30" height="30" style="cursor: pointer;", onclick="mostrarTextoFramework(2)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(3)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg"
+            width="30" height="30", style="cursor: pointer;", onclick="mostrarTextoFramework(4)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(5)">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(6)">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(7)">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" width="30"
+            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(8)">
+        </div>
+      </div>
+    </div>
   </section>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
