@@ -1,3 +1,14 @@
+document.addEventListener('click', function(event) {
+    const navbar = document.getElementById('navbarNav');
+    const toggler = document.querySelector('.navbar-toggler');
+
+    if(!navbar.contains(event.target) && !toggler.contains(event.target)){
+        if (navbar.classList.contains('show')) {
+            navbar.classList.remove('show');
+          }
+    }
+})
+
 let textos = [];
 let container;
 
