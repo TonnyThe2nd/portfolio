@@ -21,4 +21,9 @@ function mostrarTexto(img) {
   divAtiva.style.display = 'block';
 }
 
+function scrollParaSection(sectionId){
+    const elemento = document.getElementById(sectionId);
+    elemento.scrollIntoView({behavior: 'smooth'});
+}
+
 
