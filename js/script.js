@@ -1,22 +1,24 @@
-function scrollToSection(id){
-    const section = document.getElementById(id);
-    if(section){
-        section.scrollIntoView({behavior: 'smooth'});
-    }
-}
-var textos = [pyhonText,javaText, javascriptText, sqlText, csharpText, htmlText, cssText]
-function mostrarTexto(indice){
-    const javaText = document.getElementById('texto-java');
-    const csharpText = document.getElementById('texto-csharp');
-    const javascriptText = document.getElementById('texto-javascript');
-    const htmlText = document.getElementById('texto-html');
-    const cssText = document.getElementById('texto-css');
-    const sqlText = document.getElementById('texto-sql');
-    const pyhonText = document.getElementById('texto-python');
+let textos = [];
+let container;
 
-    let textos = [pyhonText,javaText, javascriptText, sqlText, csharpText, htmlText, cssText]
-    for(let i = 0; i< textos.length; i++){
-        textos[i].style.display = 'none';
-    }
-    textos[indice].style.display = 'block'
+document.addEventListener('DOMContentLoaded', () => {
+  container = document.querySelector('.habilidades-box');
+  textos = Array.from(container.querySelectorAll('div[id^="texto-"]'));
+});
+
+function mostrarTexto(img) {
+  const indice = parseInt(img.dataset.indice, 10);
+    document.getElementById('descr').style.display = 'none'
+
+  textos.forEach(div => {
+    div.style.display = 'none';
+    const p = div.querySelector('p');
+    if (p) p.style.fontSize = '';
+  });
+
+  
+  const divAtiva = textos[indice];
+  divAtiva.style.display = 'block';
 }
+
+
