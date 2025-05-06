@@ -233,3 +233,7 @@ section {
   
 }
 
+.section-contato{
+  height: 100vh;
+  padding: 15vh;
+}
