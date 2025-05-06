@@ -138,11 +138,17 @@ section {
   .nav-link {
     margin: 10px auto;
   }
+  .projetos-box p{
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 768px) {
   .habilidades-box {
     height: 50vh;
+  }
+  .projetos-box p{
+    padding-bottom: 10px;
   }
 }
 
@@ -150,7 +156,9 @@ section {
   .habilidades-box {
     height: 50vh;
   }
-  
+  .projetos-box p{
+    padding-bottom: 10px;
+  }
 }
 .section-projetos{
   min-height: 100vh;
