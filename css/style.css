@@ -8,7 +8,8 @@ body {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -75,7 +76,6 @@ section {
 
 .btn-custom:hover {
   background-color: blueviolet;
-  color: white;
 }
 
 .navbar-toggler {
@@ -85,8 +85,8 @@ section {
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-  border-color: blueviolet; 
-  box-shadow: none; 
+  border-color: blueviolet;
+  box-shadow: none;
 }
 
 @media (min-width: 1000px) {
@@ -110,12 +110,32 @@ section {
   padding: 20px;
   align-items: center;
   margin-top: 30px;
-  min-height: 50vh;
-  height: 50vh;
+  height: 55vh;
   overflow: auto;
 }
 
-.habilidades-box + .col-md-6 {
-  margin-top: 20px;
+.habilidades-box p {
+  font-size: 13px
 }
 
+@media (max-width: 800px) {
+  .personal-pic {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .habilidades-box{
+    height: 40vh;
+  }
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 10px auto;
+  }
+}
