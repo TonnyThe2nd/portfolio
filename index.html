@@ -21,7 +21,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">Início</a>
+          <a class="nav-link" href="#inicio">Início</a>
           <a class="nav-link" href="#habilidades">Habilidades</a>
           <a class="nav-link" href="#">Projetos</a>
           <a class="nav-link" href="#">Contato</a>
@@ -29,53 +29,78 @@
       </div>
     </div>
   </nav>
-
-  <div class="container mt-5">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h4>Olá mundo!</h4>
-        <h1 class="display-5">Meu nome é Antonio!</h1>
-        <h3 class="fw-bold">Desenvolvedor <br> Full stack</h3>
-        <a class="btn-custom mt-3 d-inline-block" href="https://github.com/TonnyThe2nd?tab=repositories">Meus
-          Projetos!</a>
-      </div>
-      <div class="col-md-6">
-        <div class="box-intro">
-          <div>
-            <p class="fw-bold fs-5">Quem sou eu?</p>
-            <h3 style="color: blueviolet;">Antonio Marcos</h3>
-            <p>Sou desenvolvedor full stack em formação. Crio vários projetos a fim de me tornar cada vez mais
-              capacitado.
-              Gosto de criar IA's e interfaces interativas que envolvem conexões com bancos de dados, com o intuito
-              de fazer algo útil para um possível cliente. Estou sempre empenhado em aprender novas tecnologias e
-              aprimorar
-              minhas habilidades de desenvolvimento...
-            </p>
+  <section id="inicio"> 
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h4>Olá mundo!</h4>
+          <h1 class="display-6">Meu nome é Antonio!</h1>
+          <h3 class="fw-bold">Desenvolvedor <br> Full stack</h3>
+          <a class="btn-custom mt-3 d-inline-block" href="https://github.com/TonnyThe2nd?tab=repositories">Meus
+            Projetos!</a>
+        </div>
+        <div class="col-md-6">
+          <div class="box-intro">
+            <div>
+              <p class="fw-bold fs-5">Quem sou eu?</p>
+              <h3 style="color: blueviolet;">Antonio Marcos</h3>
+              <p>Sou desenvolvedor full stack em formação. Crio vários projetos a fim de me tornar cada vez mais
+                capacitado.
+                Gosto de criar IA's e interfaces interativas que envolvem conexões com bancos de dados, com o intuito
+                de fazer algo útil para um possível cliente. Estou sempre empenhado em aprender novas tecnologias e
+                aprimorar
+                minhas habilidades de desenvolvimento...
+              </p>
+            </div>
+            <img src="images/Screenshot 2025-05-02 150636.png" class="personal-pic mx-auto" alt="Foto pessoal" />
           </div>
-          <img src="images/Screenshot 2025-05-02 150636.png" class="personal-pic" alt="Foto pessoal" />
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <section id="habilidades" class="section-habilidades">
     <div class="container py-5">
       <h1>Minhas Habilidades</h1>
       <div class="row align-items-center py-5">
         <div class="col-md-6">
-          <div class="habilidades-box">
-            <h2 class="fw-bold fs-3">Descrição</h2>
+          <div class="habilidades-box" id="div-caixa">
+            <h2 class="fw-bold fs-3" id="descr">Descrição</h2>
+            <div id="texto-python" style="display: none;">
+              <h2 class="fw-bold fs-5">Python</h2>
+              <p id="python-text" >Sou capaz de utilizar as sintaxes e identações de Python, manipulando facilmente os tipos de dados, funções e módulos/pacotes que
+                a linguagem oferece. Consigo também utilizar programação orientada a objetos, construir desenvolvimento web com bibliotecas como flask e django,
+                conseguindo também conectar com banco de dados SQL. Sou capaz de criar REST APIs com a linguagem e, além de tudo, construir automações e Inteligências
+                artificiais/Machine Learning junto de ciência de dados, usando bibliotecas como NumPy, Matplotlib, sklearn e TensorFlow;
+              </p>
+            </div>
             <div id="texto-java" style="display: none;">
               <h2 class="fw-bold fs-5">Java</h2>
-              <p>Possuo habilidades com criação de interfaces gráficas usando Java Swint e AWT, além de conhecer as
+              <p id="java-descr">Possuo habilidades com criação de interfaces gráficas usando Java Swint e AWT, além de conhecer as
                 sintaxes da linguagem, conhecendo, também, as regras de uma programação orientada ao objeto. Além disso,
                 sou capaz de criar aplicações web usando spring framework, REST APIs, aplicações com Hibernate e afins,
                 tudo junto de uma conexão com bancos de dados;
               </p>
             </div>
+            <div id="texto-javascript" style="display: none;">
+              <h2 class="fw-bold fs-5">Javascript</h2>
+              <p id="javascript-descr">Tenho conhecimento nas sintaxes do Javascript, conseguindo trabalhar com os tipos de variaveis, operadores e as diversas
+                funcionalidades que a linguagem oferece. Consigo, além de tudo, manipular o DOM das páginas, manipulando dinamicamente os elementos e atributos.
+                Ademais, consigo realizar programação assincrona com Javascript, utilizando async/await, fetch, try/catch, e afins;
+              </p>
+            </div>
+            <div id="texto-sql" style="display: none;">
+              <h2 class="fw-bold fs-5">SQL</h2>
+              <p id="sql-descr">Sou capaz de construir comandos básicos de um CRUD, involvendo criação, inserção, atualização e remoção de dados em uma tabela.
+                Pensando em consulta, sou capaz de criar filtros e condições em querys, assim como utilizar Joins em outras tabelas para mesclar infor
+                mações. Além disso, consigo criar subqueries e views a fim de fazer subconsultas ou salvar situações virutais. Também consigo criar
+                procedures e triggers no intuito de criar uma estrutura melhor para a base de dados;
+              </p>
+            </div>
             <div id="texto-csharp" style="display: none;">
               <h2 class="fw-bold fs-5">C#</h2>
-              <p>Sou capaz de criar aplicações web usando Entity Framework junto de html mesclado com razor, além de
+              <p id="csharp-descr">Sou capaz de criar aplicações web usando Entity Framework junto de html mesclado com razor, além de
                 criar
                 APIs que manipulam dados direto no banco de dados, sendo capaz de usar estruturas tanto MVC quanto
                 Dapper para
@@ -86,41 +111,85 @@
                 orientada ao objeto e as sintaxes de C#;
               </p>
             </div>
-            <div id="texto-javascript" style="display: none;">
-              <h2 class="fw-bold fs-5">Javascript</h2>
-              <p>Tenho conhecimento nas sintaxes do Javascript, conseguindo trabalhar com os tipos de variaveis, operadores e as diversas
-                funcionalidades que a linguagem oferece. Consigo, além de tudo, manipular o DOM das páginas, manipulando dinamicamente os elementos e atributos.
-                Ademais, consigo realizar programação assincrona com Javascript, utilizando async/await, fetch, try/catch, e afins;
-              </p>
-            </div>
-            <div id="texto-python" style="display: none;">
-              <h2 class="fw-bold fs-5">Python</h2>
-              <p>Sou capaz de utilizar as sintaxes e identações de Python, manipulando facilmente os tipos de dados, funções e módulos/pacotes que
-                a linguagem oferece. Consigo também utilizar programação orientada a objetos, construir desenvolvimento web com bibliotecas como flask e django,
-                conseguindo também conectar com banco de dados SQL. Sou capaz de criar REST APIs com a linguagem e, além de tudo, construir automações e Inteligências
-                artificiais/Machine Learning junto de ciência de dados, usando bibliotecas como NumPy, Matplotlib, sklearn e TensorFlow;
-              </p>
-            </div>
             <div id="texto-html" style="display: none;">
               <h2 class="fw-bold fs-5">HTML</h2>
-              <p>Compreendo a estrutura de um documento HTML, tais como suas tags essenciais de texto, botões, formulários e afins.
+              <p id="html-descr">Compreendo a estrutura de um documento HTML, tais como suas tags essenciais de texto, botões, formulários e afins.
                 Junto disso, entendo as tags semânticas modernas, desde header até aside.;
               </p>
             </div>
             <div id="texto-css" style="display: none;">
               <h2 class="fw-bold fs-5">CSS</h2>
-              <p>Sou capaz de utilizar a sintaxe e a estrutura do CSS, mesclando os seletores com classes e id's definidos no HTML.
+              <p id="css-descr">Sou capaz de utilizar a sintaxe e a estrutura do CSS, mesclando os seletores com classes e id's definidos no HTML.
                 Consigo construir páginas bem estruturadas usando propriedades de layout e posicionamento, assim como propriedades de dimensão, alinhamentos
                 e estrutura de colunas e linhas. Possuo conhecimento também na parte de animações/transições, utilizando transitio/transform/animation e keyframes, e também
                 em responsividade, usando a tag @media;
               </p>
             </div>
-            <div id="texto-sql" style="display: none;">
-              <h2 class="fw-bold fs-5">SQL</h2>
-              <p>Sou capaz de construir comandos básicos de um CRUD, involvendo criação, inserção, atualização e remoção de dados em uma tabela.
-                Pensando em consulta, sou capaz de criar filtros e condições em querys, assim como utilizar Joins em outras tabelas para mesclar infor
-                mações. Além disso, consigo criar subqueries e views a fim de fazer subconsultas ou salvar situações virutais. Também consigo criar
-                procedures e triggers no intuito de criar uma estrutura melhor para a base de dados;
+            <div id="texto-spring" style="display: none;">
+              <h2 class="fw-bold fs-5">Spring Framework</h2>
+              <p id="spring-descr">Sou capaz de criar APIs usando spring framework, desde springboot (REST APIs), a fim de manipular o banco de dados através 
+                de requisições web e mapeamentos com parâmetros, tudo baseado em um DTO e validações, até spring security. Consigo fazer injeções de dependências e inversao de controles e utilizar corretamente
+                as variadas anotações. Além de tudo, há também o conhecimento em Data JPA, a fim de mapear corretamente as entidades dentro do banco de dados;
+              </p>
+            </div>
+            <div id="texto-pandas" style="display: none;">
+              <h2 class="fw-bold fs-5">Pandas Framework</h2>
+              <p id="pandas-descr">Ao trabalhar com dados utilizando pandas, consigo tratar de forma eficiente uma tabela de dados, seja ela importada com csv ou não.
+                Consigo também fazer analises estatísticos a partir dos dados da tabela e analises de dados em si, desde somas, medias e afins. Além de tudo, buscas
+                com filtros também compõe minhas habilidades, assim como buscas gerais ou com agrupamentos, agregações ou ordenações. Sou capaz também de integrar essa 
+                framework com outras bibliotecas, como Numpy, Matplotlib e Seaborn, assim como machine learning, como Scikit-learn e Tensorflow;
+              </p>
+            </div>
+            <div id="texto-tensor" style="display: none;">
+              <h2 class="fw-bold fs-5">TensorFlow / Keras</h2>
+              <p id="tensor-descr">Com uma biblioteca poderosa de Deep Learning, consigo criar redes neurais variadas, desde generativas até convolucionais,
+                construindo modelos sequenciais, defininindo suas diversas camadas dependendo do algoritmo, manipulando suas funções de ativação e compilando-os com
+                otimizadores específicos. Ademais, sou capaz de treinar tal modelo com dados dividos entre treino, teste, e validação, avaliando também o desempenho e taxas 
+                da rede, utilizando, a fim de melhora-lo, callbacks. Consigo também pré-processar dados e normaliza-los, desde imagens até dados tabelares.
+                No geral, tudo isso é feito a partir do Tensorflow.Keras, mas também sou capaz de criar algoritmos do zero utilizando apenas TensorFlow 1.0 puro;
+              </p>
+            </div>
+            <div id="texto-matplotlib" style="display: none;">
+              <h2 class="fw-bold fs-5">MatPlotLib</h2>
+              <p id="matplotlib-descr">A fim de criar visualizações de dados, utilizo Matplotlib para criar gráficos personalizados, com barras, gráficos
+                de dispersão, gráficos de pizza, entre outros. Além disso, consigo também personaliza-los, manipulando legendas, titulos, legendas de eixos, tamanhos do gráfico;
+              </p>
+            </div>
+            <div id="texto-opencv" style="display: none;">
+              <h2 class="fw-bold fs-5">OpenCV</h2>
+              <p id="opencv-descr">Utilizando OpenCV, sou capaz de ler imagens e videos usando imread() e VideoCapture() e tanto mostra-los no terminal/browser ou salva-los na máquina.
+                Trabalhando com essas imagens/videos, consigo também manipula-los, desde suas cores e efeitos, até os tamanhos. Utilio  tal biblioteca a fim de tratar imagens que serão 
+                posteriormente utilizadas num treinamento de rede neural convolucional, combinando-a com tensorflow, para o modelo de IA, e Numpy, para manipulação de matrizes e máscaras;
+              </p>
+            </div>
+            <div id="texto-scikit" style="display: none;">
+              <h2 class="fw-bold fs-5">Scikit-Learn</h2>
+              <p id="scikit-descr">Assim como TensorFlow, utilizo Scikit-Leanr para criar algoritmos de IA, porém, nesse caso, são modelos mais simples, como RandomForest, Gaussian,
+                Linear Regression, KMeans,, LogisticRegression e entre outros, uma vez que é uma biblioteca mais simples de se utilizar quando o assunto é gerar predições. Tal biblioteca me proporciona métodos capazes
+                de normalizar, padronizar e escalar dados, dividi-los para treino, teste e validação da IA e até mesmo avaliar o modelo. É uma biblioteca que me oferece 
+                a capacidade de resolver problemas com machine learning desde o tratamento de dados, até o modelo treinado e avaliado, pronto para gerar um valor;
+              </p>
+            </div>
+            <div id="texto-flask" style="display: none;">
+              <h2 class="fw-bold fs-5">Flask</h2>
+              <p id="flask-descr">Com flask, sou capaz de desenvolver APIs Rest, utilizando métodos HTTP de maneira eficiente e segura. Consigo gerenciar 
+                rotas com parâmetros dinâmicos na URL, vinculando rotas às funções. Junto disso, é possível gerenciar formulários com requisições POST, incuindo
+                validações, e inserindo/atualizando direto no banco de dados. Partindo para a segurança, sou capaz também de gerenciar sistemas de acesso e segurança 
+                com autenticações e autorizações;
+              </p>
+            </div>
+            <div id="texto-boot" style="display: none;">
+              <h2 class="fw-bold fs-5">BootStrap</h2>
+              <p id="boot-descr">Para estilizar sites, consigo utilizar bootstrap para gerenciar colunas e linhas, desde o seu display em monitores até 
+                suas formas responsivas em mobile ou telas menores/maiores. Consigo também manipular configurações de componentes, sejam eles listas, tabelas, textos ou botões;
+              </p>
+            </div>
+            <div id="texto-hibernate" style="display: none;">
+              <h2 class="fw-bold fs-5">Hibernate</h2>
+              <p id="hibernate-descr">Parecido com Java SpringBoot, utilizo Hibernate para trabalhar direto com o banco de dados através de querys feitas
+                através do java. É possível mapear as entidades e tabelas utilizando anotações, assim como mapear relacionamentos. Consultas podem ser feitas de formas nativas
+                ou através de HQL/JPQL, a fim de realizar as querys básicas do sql. Dentro do hibernate, é possível também fazer commits e rollbacks, garantindo a integridade dos dados e suas
+                consistências;
               </p>
             </div>
           </div>
@@ -128,43 +197,43 @@
         <div class="col-md-6">
           <h2 class="fw-bold fs-4">Linguagem</h2>
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-            width="30" height="30" style="cursor: pointer;", onclick="mostrarTexto(0)">
+            width="30" height="30" style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="0">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="30"
-            height="30" style="cursor: pointer;", onclick="mostrarTexto(1)">
+            height="30" style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="1">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            width="30" height="30" style="cursor: pointer;", onclick="mostrarTexto(2)">
+            width="30" height="30" style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="2">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTexto(3)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="3">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-            width="30" height="30", style="cursor: pointer;", onclick="mostrarTexto(4)">
+            width="30" height="30", style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="4">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTexto(5)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="5">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTexto(6)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="6">
             <h2 class="fw-bold fs-4 mt-5">Framework</h2>
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
-            width="30" height="30" style="cursor: pointer;", onclick="mostrarTextoFramework(0)">
+            width="30" height="30" style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="7">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="30"
-            height="30" style="cursor: pointer;", onclick="mostrarTextoFramework(1)">
+            height="30" style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="8">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg"
-            width="30" height="30" style="cursor: pointer;", onclick="mostrarTextoFramework(2)">
+            width="30" height="30" style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="9">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(3)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="10">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg"
-            width="30" height="30", style="cursor: pointer;", onclick="mostrarTextoFramework(4)">
+            width="30" height="30", style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="11">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(5)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="12">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(6)">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(7)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="13">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" width="30"
-            height="30"  style="cursor: pointer;", onclick="mostrarTextoFramework(8)">
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="14">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg" width="30"
+            height="30"  style="cursor: pointer;" onclick="mostrarTexto(this)" data-indice="15">
         </div>
       </div>
     </div>
   </section>
-
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
