@@ -24,6 +24,7 @@ section {
   background: linear-gradient(to right, #243b55, #5b247a);
   padding: .5rem 2rem;
   backdrop-filter: blur(10px);
+  opacity: 0.9;
 }
 
 .navbar-brand {
