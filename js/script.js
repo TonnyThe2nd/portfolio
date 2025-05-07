@@ -40,16 +40,22 @@ function scrollParaSection(sectionId){
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("toggleDark");
   const body = document.body;
+  const navLinks = document.querySelectorAll('.navlink');
 
   toggle.addEventListener("click", function () {
     body.classList.toggle("light-mode");
 
-    if (body.classList.contains("light-mode")) {
-      toggle.classList.remove("fa-sun");
-      toggle.classList.add("fa-moon");
-    } else {
-      toggle.classList.remove("fa-moon");
-      toggle.classList.add("fa-sun");
-    }
+    const cor = body.classList.contains("light-mode") ? 'black' : 'white';
+
+    toggle.classList.toggle("fa-sun");
+    toggle.classList.toggle("fa-moon");
+
+    // Mudar cor dos links
+    navLinks.forEach(link => {
+      link.style.color = cor;
+    });
+
+   document.getElementById('botao-projetos').style.color = cor;
   });
 });
+

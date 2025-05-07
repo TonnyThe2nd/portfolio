@@ -25,7 +25,6 @@ section {
 .navbar {
   position: fixed;
   z-index: 1050;
- 
   padding: .5rem 2rem;
   backdrop-filter: blur(10px);
   opacity: 1;
@@ -39,7 +38,7 @@ section {
   color: blueviolet;
 }
 .nav-link {
-  color: white !important;
+  color: white ;
   border: 2px solid blueviolet;
   margin: 10px 5px;
   border-radius: 8px;
@@ -56,7 +55,6 @@ section {
 }
 
 #toggleDark{
-  font-family: 20px;
   cursor: pointer;
   position: absolute;
   right: 5%;
