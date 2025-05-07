@@ -37,4 +37,19 @@ function scrollParaSection(sectionId){
     elemento.scrollIntoView({behavior: 'smooth'});
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("toggleDark");
+  const body = document.body;
 
+  toggle.addEventListener("click", function () {
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("light-mode")) {
+      toggle.classList.remove("fa-sun");
+      toggle.classList.add("fa-moon");
+    } else {
+      toggle.classList.remove("fa-moon");
+      toggle.classList.add("fa-sun");
+    }
+  });
+});
