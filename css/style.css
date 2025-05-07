@@ -31,7 +31,9 @@ section {
   font-weight: bold;
   color: blueviolet;
 }
-
+.navbar-brand:hover{
+  color: blueviolet;
+}
 .nav-link {
   color: white !important;
   border: 2px solid blueviolet;
@@ -40,6 +42,8 @@ section {
   padding: 6px 0px;
   width: 100px;
   text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .nav-link:hover {
