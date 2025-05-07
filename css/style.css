@@ -16,14 +16,14 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to right, #243b55, #5b247a); /* dark */
+  background: linear-gradient(to right, #243b55, #5b247a);
   transition: opacity 1s ease;
   opacity: 1;
   pointer-events: none;
 }
 
 body.light-mode::before {
-  opacity: 0; /* esconde o gradiente escuro */
+  opacity: 0;
 }
 
 body.light-mode {
@@ -35,7 +35,7 @@ body::after {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(to right, #c6c9cc, #b183cc); /* light */
+  background: linear-gradient(to right, #c6c9cc, #b183cc); 
 }
 html,
 body {
