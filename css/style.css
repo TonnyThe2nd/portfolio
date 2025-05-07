@@ -258,4 +258,14 @@ section {
 .section-contato{
   height: 100vh;
   padding: 15vh;
+  width: 100vh;
+}
+
+.icones-contato{
+  padding: 0px 10px;
+  color: blueviolet;
+}
+.icones-contato:hover{
+  transition: .5s;
+  font-size: 35px;
 }
