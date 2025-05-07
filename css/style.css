@@ -7,7 +7,11 @@ body {
   color: white;
   margin: 0;
 }
-
+body.light-mode{
+  background: linear-gradient(to right, #c6c9cc, #b183cc);
+  color: black;
+  margin: 0;
+}
 html,
 body {
   max-width: 100%;
@@ -21,25 +25,28 @@ section {
 .navbar {
   position: fixed;
   z-index: 1050;
-  background: linear-gradient(to right, #243b55, #5b247a);
   padding: .5rem 2rem;
   backdrop-filter: blur(10px);
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .navbar-brand {
   font-weight: bold;
   color: blueviolet;
 }
-
+.navbar-brand:hover{
+  color: blueviolet;
+}
 .nav-link {
-  color: white !important;
+  color: white ;
   border: 2px solid blueviolet;
   margin: 10px 5px;
   border-radius: 8px;
   padding: 6px 0px;
   width: 100px;
   text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .nav-link:hover {
@@ -47,6 +54,12 @@ section {
   color: white !important;
 }
 
+#toggleDark{
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  transform: translate(-50%, -50%);
+}
 .box-intro {
   background-color: rgba(255, 255, 255, 0.05);
   border: 2px solid white;
