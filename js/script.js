@@ -54,7 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach(link => {
       link.style.color = cor;
     });
-
+    document.getElementById('div-caixa').style.borderColor = cor;
+    document.getElementById('div-caixa-intro').style.borderColor = cor;
+    document.querySelectorAll('#div-caixa-projeto').forEach(caixas =>{
+      caixas.style.borderColor = cor;
+    });
    document.getElementById('botao-projetos').style.color = cor;
   });
 });
