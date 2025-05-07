@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function mostrarTexto(img) {
   const indice = parseInt(img.dataset.indice, 10);
     document.getElementById('descr').style.display = 'none'
+    document.getElementById('expl').style.display = 'none'
 
   textos.forEach(div => {
     div.style.display = 'none';
