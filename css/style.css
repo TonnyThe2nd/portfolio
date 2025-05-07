@@ -150,6 +150,7 @@ section {
   .projetos-box p{
     padding-bottom: 10px;
   }
+  
 }
 
 @media (min-width: 992px) {
@@ -159,6 +160,7 @@ section {
   .projetos-box p{
     padding-bottom: 10px;
   }
+  
 }
 .section-projetos{
   min-height: 100vh;
@@ -217,7 +219,9 @@ section {
   padding-bottom: 10px;
   z-index: 1;
 }
-
+.projetos-box a{
+  text-decoration: none;
+}
 @media (max-width:820px){
   .projetos-box p{
     padding-bottom: 40px;
@@ -225,12 +229,20 @@ section {
   .habilidades-box {
     width: 43vh;
   }
+  .habilidades-box p{
+    font-size: 15px;
+  }
 }
 @media (max-width: 1024px) {
   .projetos-box p{
     padding: 50px;
   }
-  
+  .habilidades-box {
+    width: 53vh;
+  }
+  .habilidades-box p{
+    font-size: 16px;
+  }
 }
 
 .section-contato{
