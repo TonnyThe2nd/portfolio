@@ -3,14 +3,39 @@
 }
 
 body {
-  background: linear-gradient(to right, #243b55, #5b247a);
+  position: relative;
+  margin: 0;
   color: white;
-  margin: 0;
+  transition: color 0.5s ease;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
-body.light-mode{
-  background: linear-gradient(to right, #c6c9cc, #b183cc);
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #243b55, #5b247a); /* dark */
+  transition: opacity 1s ease;
+  opacity: 1;
+  pointer-events: none;
+}
+
+body.light-mode::before {
+  opacity: 0; /* esconde o gradiente escuro */
+}
+
+body.light-mode {
   color: black;
-  margin: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(to right, #c6c9cc, #b183cc); /* light */
 }
 html,
 body {
