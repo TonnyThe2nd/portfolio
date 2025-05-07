@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.classList.toggle("fa-sun");
     toggle.classList.toggle("fa-moon");
 
-    // Mudar cor dos links
     navLinks.forEach(link => {
       link.style.color = cor;
     });
