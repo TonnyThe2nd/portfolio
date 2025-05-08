@@ -228,12 +228,12 @@ section {
   overflow: hidden;
 }
 .projetos-box:hover .projeto-link{
-  bottom: 10vh;
+  bottom: 30%;
 }
 
 .projeto-link{
   position: absolute;
-  bottom: -10vh;
+  bottom: -40%;
   left: 50%;
   transform: translateX(-50%);
   transition: bottom 0.6s ease;
